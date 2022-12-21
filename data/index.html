@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cocottes Master</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="topnav">
+      <h1>Cocottes Master</h1><h2>Temp: %TEMP%&deg;C - Hygro: %HUMIDITY%&#37; - Wifi: %RSSI%dBm</h2>
+    </div>
+    <div class="content">
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title"><i class="fas fa-lightbulb"></i> Eclairage</p>
+          <p>
+            <a href="light_on"><button class="button-on">ON</button></a>
+            <a href="light_off"><button class="button-off">OFF</button></a>
+          </p>
+          <p class="state">Etat: %LIGHT_STATE%</p>
+        </div>
+      </div>
+      <div class="card-grid">
+        <div class="card">
+          <p class="card-title"><i class="fas fa-lightbulb"></i> Porte</p>
+          <p>
+            <a href="door_open"><button class="button-on">Ouvrir</button></a>
+            <a href="door_close"><button class="button-off">Fermer</button></a>
+          </p>
+          <p class="state">Etat: %DOOR_STATE%</p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
